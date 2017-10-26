@@ -1,0 +1,29 @@
+# I have no idea what I am doing
+print "Attention!"
+main_character = raw_input("Enter a name: ")
+
+adjective_1 = raw_input("Enter the first adjective: ")
+adjective_2 = raw_input("Enter the second adjective: ")
+adjective_3 = raw_input("Enter the third adjective: ")
+
+verb_1 = raw_input("Enter the first verb: ")
+verb_2 = raw_input("Enter the second verb: ")
+verb_3 = raw_input("Enter the third verb: ")
+
+noun_1 = raw_input("Enter the first noun: ")
+noun_2 = raw_input("Enter the second noun: ")
+noun_3 = raw_input("Enter the third noun: ")
+noun_4 = raw_input("Enter the four noun: ")
+
+animal = raw_input("Enter an animal:")
+food = raw_input("Enter a food :")
+fruit = raw_input("Enter a fruit :")
+number = raw_input("Enter a number :")
+superhero_name = raw_input("Enter a super hero:")
+country = raw_input("Enter a country:")
+dessert = raw_input("Enter a dessert:")
+year = raw_input("Enter a year:")
+
+#The template for the story
+STORY = "This morning I woke up and felt %s because %s was going to finally %s over the big %s %s. On the other side of the %s were many %ss protesting to keep %s in stores. The crowd began to %s to the rhythm of the %s, which made all of the %ss very %s. %s tried to %s into the sewers and found %s rats. Needing help, %s quickly called %s. %s appeared and saved %s by flying to %s and dropping %s into a puddle of %s. %s then fell asleep and woke up in the year %s, in a world where %ss ruled the world."
+print STORY % (adjective_1, main_character, verb_1, adjective_2, noun_1, noun_2, animal, food, verb_2, noun_3, fruit, adjective_3, main_character, superhero_name, main_character, country, main_character, dessert, main_character, year, noun_4, superhero_name, superhero_name , noun_2, noun_2)    
