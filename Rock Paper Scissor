@@ -1,0 +1,48 @@
+# Let's build the Rock, Paper, Scissor game and start playing
+
+from random import randint
+from time import sleep
+
+options = ["R" , "P" , "S"]
+LOOSE_MESSAGE = "Sorry. You lost!"
+WINNING_MESSAGE = "Congrats! You rocks!"
+
+def decide_winner(user_choice, computer_choice):
+  print "You selected: %s" % user_choice
+  print "Computer selecting ..."
+  sleep(1)
+  print "Computer selected: %s" % computer_choice
+  
+  user_choice_index = options.index(user_choice)
+  computer_choice_index = options.index(computer_choice)
+  
+  if user_choice == computer_choice:
+    print "It's a tie."
+    
+  elif user_choice == 0 and computer_choice == 2:
+      print "Yay! You win."
+      
+  elif user_choice == 2 and computer_choice == 1:
+      print "You win. Nice"
+      
+  elif user_choice == 1 and computer_choice == 0:
+      print "You win :)"
+      
+  elif user_choice_index > 2:
+      return
+    
+  else:
+      print "Sorry Dude! You lose."
+      
+def play_RPS():
+  print "Let's play it"
+  user_choice = raw_input ("Select R for Rock, P for Paper, or S for Scissors: ")
+  user_choice = user_choice.upper()
+  sleep(1)
+  computer_choice = options[randint (0, len(options) - 1)]
+	
+  decide_winner(user_choice, computer_choice)
+  
+play_RPS()                                     
+  
+     
