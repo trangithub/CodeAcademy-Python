@@ -1,3 +1,4 @@
+# Calculate and retunr the sum of the digits
 def digit_sum(x):
     total = 0
     while x > 0:
@@ -7,3 +8,21 @@ def digit_sum(x):
     return total
     
     #If you're looking for a challenge, try this: to get the rightmost digit of a number, you can modulo (%) the number by 10. To remove the rightmost digit you can floor divide (//) the number by 10. (Don't worry if you're not familiar with floor division—you can look up the documentation here. Remember, this is a challenge!)
+    
+# Calculate and return the factorial of a number
+def factorial(x):
+    total = 1
+    while x>0:
+        total *= x
+        x-=1
+    return total
+    
+# Check if a number is prime
+def is_prime(x):
+    if x < 2:
+        return False
+    else:
+        for n in range(2, x-1):
+            if x % n == 0:
+                return False
+        return True
