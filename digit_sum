@@ -1,0 +1,9 @@
+def digit_sum(x):
+    total = 0
+    while x > 0:
+        total += x % 10
+        x = x // 10
+        print x
+    return total
+    
+    #If you're looking for a challenge, try this: to get the rightmost digit of a number, you can modulo (%) the number by 10. To remove the rightmost digit you can floor divide (//) the number by 10. (Don't worry if you're not familiar with floor division—you can look up the documentation here. Remember, this is a challenge!)
