@@ -26,3 +26,25 @@ def is_prime(x):
             if x % n == 0:
                 return False
         return True
+
+# REVERSE A STRING
+def reverse(text):
+    word = ""
+    l = len(text) -1
+    while l >= 0:
+        word = word + text[l]
+        l -= 1
+    return word
+print reverse("hello")
+
+# VOWELS
+def anti_vowel(text):
+    t=""
+    for c in text:
+        for i in "ieaouIEAOU":
+            if c==i:
+                c=""
+            else:
+                c=c
+        t=t+c
+    return t
