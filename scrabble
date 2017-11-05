@@ -1,0 +1,9 @@
+# Define a function scrabble_score that takes a string word as input and returns the equivalent scrabble score for that word.
+def scrabble_score(word):
+  word = word.lower()
+  total = 0
+  for letter in word:
+    for leter in score:
+      if letter == leter:
+        total = total + score[leter]
+  return total
