@@ -20,3 +20,11 @@ f.close()
 64
 81
 100
+
+# Note
+#You can open files in any of the following modes:
+
+#write-only mode ("w")
+#read-only mode ("r")
+#read and write mode ("r+")
+#append mode ("a"), which adds any new data you write to the file to the end of the file.
